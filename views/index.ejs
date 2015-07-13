@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true" />
+    <title><%= title %></title>
+    <link href='//fonts.googleapis.com/css?family=Raleway:500,100, 400, 800' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Maplestory2 Boss Timers</h1>
+    <div class='section section--griffy'>
+      <h2>Griffy (lv 30)</h2>
+      <img src='/images/griffy.png'>
+      <div class='timers'>
+        <span class='countdown countdown--griffy'></span>
+        <span class='time time--griffy'></span>
+      </div>
+    </div>
+    <div class='section section--sally'>
+      <h2>Cargo</h2>
+      <img src='/images/cargo.png'>
+      <div class='timers'>
+        <span class='countdown countdown--sally'></span>
+        <span class='time time--sally'></span>
+      </div>
+    </div>
+    <div class='section section--oneeye'>
+      <h2>One Eye</h2>
+      <img src='/images/oneeye.png'>
+      <div class='timers'>
+        <span class='countdown countdown--oneeye'></span>
+        <span class='time time--oneeye'></span>
+      </div>
+    </div>
+    <div class='section section--robot'>
+      <h2>Robot</h2>
+      <img src='/images/robot.png'>
+      <div class='timers'>
+        <span class='countdown countdown--robot'></span>
+        <span class='time time--robot'></span>
+      </div>
+    </div>
+
+  <script>
+    var TIMERS = JSON.parse('<%- times %>')
+  </script>
+  <script src='/javascripts/main.js'></script>
+  </body>
+</html>
